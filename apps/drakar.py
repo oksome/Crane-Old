@@ -43,6 +43,7 @@ def get_archive(cutename):
         os.chdir(here)
     
     if isfile(file_path):
+        print(archives_path)
         return file_path
     else:
         raise IOError("Could not obtain '{}' in Drakar".format(filename))

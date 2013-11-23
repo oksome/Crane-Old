@@ -1,8 +1,0 @@
-# Packages for a creative environment
-
-# Atmega development
-
-gcc-avr
-avrdude
-avr-libc
-

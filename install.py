@@ -5,7 +5,7 @@ from os import system as do
 
 def list_packages(apt_file):
     pkg_names = []
-    for line in open(pkg_list).readlines():
+    for line in open(apt_file).readlines():
         line = line.strip()
         name, comments = line.split('#', 1)
         if name:

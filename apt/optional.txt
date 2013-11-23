@@ -4,3 +4,14 @@ libzmq1
 libzmq-dev
 
 arp-scan
+
+# For Docker
+lxc
+wget
+bsdtar
+curl
+golang
+git
+aufs-tools
+mercurial
+iptables

@@ -3,12 +3,6 @@ Debris
 
 Debian config tools and tips.
 
-
-Window Manager
----
-
-`apt-get install i3`
-
 Nvidia
 ---
 

@@ -13,17 +13,22 @@ if not isdir(DRAKAR_PATH):
 SYSTEM = sys.platform + '-' + platform.machine()
 
 sources = {
-    'linux2-x86_64/processing-2.1-linux64.tgz': 'http://download.processing.org/processing-2.1-linux64.tgz',
+    'processing': {
+        'linux2-x86_64': ('processing-2.1-linux64.tgz', 'http://download.processing.org/processing-2.1-linux64.tgz'),
+        }
     }
 
 
-def get_archive(filename):
+def get_archive(cutename):
+    
+    filename = sources['cutename'][SYSTEM]
+    # => filename-linux64.foo
     
     archives_path = join(DRAKAR_PATH, 'archives', SYSTEM)
     # => /mnt/drakar/archives/linux2-x86_64
     
     file_path = join(archives_path, filename)
-    # => /mnt/drakar/archives/linux2-x86_64/filename.foo
+    # => /mnt/drakar/archives/linux2-x86_64/filename-linux64.foo
     
     if not isfile(file_path):
         here = os.getcwd()

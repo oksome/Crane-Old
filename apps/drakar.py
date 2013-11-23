@@ -1,3 +1,5 @@
+#!/usr/bin/env python2
+
 import os
 import sys
 import platform
@@ -13,6 +15,7 @@ SYSTEM = sys.platform + '-' + platform.machine()
 sources = {
     'linux2-x86_64/processing-2.1-linux64.tgz': 'http://download.processing.org/processing-2.1-linux64.tgz',
     }
+
 
 def get_archive(filename):
     
@@ -36,4 +39,9 @@ def get_archive(filename):
     else:
         raise IOError("Could not obtain '{}' in Drakar".format(filename))
 
-print(get_archive('processing-2.1-linux64.tgz'))
+if __name__ == '__main__':
+    for source in sources:
+        answer = raw_input('Install {} ? [y/n]'.format(source))
+        if answer in ('y', 'Y'):
+            get_archive(source)
+        

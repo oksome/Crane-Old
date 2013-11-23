@@ -11,3 +11,4 @@ debootstrap
 build-essential
 
 git
+mercurial

@@ -7,7 +7,7 @@ def list_packages(apt_file):
     pkg_names = []
     for line in open(apt_file).readlines():
         line = line.strip()
-        name, comments = line.split('#', 1)
+        name = line.split('#', 1)[0]
         if name:
             pkg_names.append(name)
     return pkg_names

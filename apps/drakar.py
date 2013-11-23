@@ -50,7 +50,7 @@ def get_archive(cutename):
 
 if __name__ == '__main__':
     for source in sources:
-        answer = raw_input('Install {} ? [y/n]'.format(source))
+        answer = raw_input('Install {} ? [y/N] '.format(source))
         if answer in ('y', 'Y'):
             get_archive(source)
         

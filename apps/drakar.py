@@ -14,14 +14,17 @@ SYSTEM = sys.platform + '-' + platform.machine()
 
 sources = {
     'processing': {
-        'linux2-x86_64': ('processing-2.1-linux64.tgz', 'http://download.processing.org/processing-2.1-linux64.tgz'),
+        'linux2-x86_64': {
+            'filename': 'processing-2.1-linux64.tgz', 
+            'url': 'http://download.processing.org/processing-2.1-linux64.tgz',
+            }
         }
     }
 
 
 def get_archive(cutename):
     
-    filename = sources[cutename][SYSTEM]
+    filename = sources[cutename][SYSTEM]['filename']
     # => filename-linux64.foo
     
     archives_path = join(DRAKAR_PATH, 'archives', SYSTEM)
@@ -32,7 +35,7 @@ def get_archive(cutename):
     
     if not isfile(file_path):
         here = os.getcwd()
-        source = sources[join(SYSTEM, filename)]
+        source = sources[cutename][SYSTEM][url]
         
         os.makedirs(archives_path)
         os.chdir(archives_path)

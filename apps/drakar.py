@@ -26,6 +26,7 @@ def get_archive(filename):
         here = os.getcwd()
         source = sources[join(SYSTEM, filename)]
         
+        os.makedirs(archives_path)
         os.chdir(archives_path)
         os.system('wget ' + source)
         os.chdir(here)

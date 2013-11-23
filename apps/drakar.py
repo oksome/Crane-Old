@@ -21,7 +21,7 @@ sources = {
 
 def get_archive(cutename):
     
-    filename = sources['cutename'][SYSTEM]
+    filename = sources[cutename][SYSTEM]
     # => filename-linux64.foo
     
     archives_path = join(DRAKAR_PATH, 'archives', SYSTEM)

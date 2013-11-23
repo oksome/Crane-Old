@@ -2,9 +2,12 @@ import os
 import sys
 import platform
 
-from os.path import isfile, join
+from os.path import isfile, isdir, join
 
 DRAKAR_PATH = os.environ.get('DRAKAR', '/mnt/drakar')
+if not isdir(DRAKAR_PATH):
+    raise OSError("No such directory: '{}'".format(DRAKAR_PATH))
+
 SYSTEM = sys.platform + '-' + platform.machine()
 
 sources = {

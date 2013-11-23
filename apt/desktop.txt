@@ -2,6 +2,7 @@
 
 # Window Manager
 i3
+lightdm
 
 # Hardware management
 pm-utils

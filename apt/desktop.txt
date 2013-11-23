@@ -1,0 +1,3 @@
+# Packages for a desktop environment
+
+i3

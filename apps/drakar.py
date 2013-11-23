@@ -19,7 +19,7 @@ def get_archive(filename):
     file_path = join(archives_path, filename)
     # => /mnt/drakar/archives/linux2-x86_64/filename.foo
     
-    if not isfile(file_path)
+    if not isfile(file_path):
         here = os.getcwd()
         source = sources[join(SYSTEM, filename)]
         

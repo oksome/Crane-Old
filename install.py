@@ -13,6 +13,6 @@ def list_packages(apt_file):
     return pkg_names
 
 for apt_file in glob.glob('apt/*.txt'):
-    if raw_input("Install packages from '{}' ? [y/N] ".format(apt_file) in ('y', 'Y'):
+    if raw_input("Install packages from '{}' ? [y/N] ".format(apt_file)) in ('y', 'Y'):
         pkg_names = list_packages(apt_file)
         do("apt-get install {}".format(' '.join(pkg_names)))

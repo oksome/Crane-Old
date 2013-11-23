@@ -8,3 +8,6 @@ pm-utils
 
 # JDK for Arduino and Processing
 openjdk-7-jdk
+
+# Various
+xdotool

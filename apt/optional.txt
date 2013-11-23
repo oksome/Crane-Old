@@ -1,0 +1,6 @@
+# Optional files for both desktop and server installations.
+
+libzmq1
+libzmq-dev
+
+arp-scan

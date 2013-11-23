@@ -9,3 +9,5 @@ wget
 # Developer tools
 debootstrap
 build-essential
+
+git

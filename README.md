@@ -1,7 +1,7 @@
-Debris
+Crane
 ======
 
-Debian config tools and tips.
+Tools for building new Debian systems.
 
 Nvidia
 ---

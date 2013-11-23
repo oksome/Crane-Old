@@ -6,6 +6,3 @@ gcc-avr
 avrdude
 avr-libc
 
-# JDK for Arduino and Processing
-
-openjdk-7-jdk

@@ -1,0 +1,12 @@
+mpc
+ncmpc
+
+curl
+wget
+
+# Window manager
+i3
+
+# Developer tools
+debootstrap
+build-essential

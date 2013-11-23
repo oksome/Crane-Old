@@ -36,4 +36,4 @@ def get_archive(filename):
     else:
         raise IOError("Could not obtain '{}' in Drakar".format(filename))
 
-get_archive('processing-2.1-linux64.tgz')
+print(get_archive('processing-2.1-linux64.tgz'))

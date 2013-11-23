@@ -19,11 +19,3 @@ Sources.list :
 Authorize X to listen on tcp
 ---
 
-Install personal settings
----
-
-Use AUFS to keep these in a repo ?
-
-* .vimrc
-* .profile
-* .bash_aliases

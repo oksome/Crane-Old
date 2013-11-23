@@ -1,0 +1,6 @@
+# Packages required for complete Python build.
+
+libsqlite3-dev
+libssl-dev
+libncurses5-dev
+libreadline6-dev

@@ -9,8 +9,9 @@ User:
 
 Packages:
     pkg.installed:
-        - name: git
-        - name: python3-zmq
+        - names:
+            - git
+            - python3-zmq
 
 Intercom.git:
     

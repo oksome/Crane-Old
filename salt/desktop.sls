@@ -1,4 +1,3 @@
-
 desktop:
     pkg.installed:
         - name: i3
@@ -6,6 +5,7 @@ desktop:
 
 multimedia:
     pkg.installed:
+        - name: alsa-utils
         - name: vlc
 
 power-user:

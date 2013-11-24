@@ -24,7 +24,7 @@ RUN cd /tmp; git clone https://github.com/oksome/Crane.git; mv /tmp/Crane/salt /
 # For ease of debugging, Docker stops all services between each step. The bad
 # side is that we have to relaunch all services for every command.
 
-RUN service salt-master start; service salt-minion start; sleep 2; salt-key -a '*' -y; salt '*' state.hightstate
+RUN service salt-master start; service salt-minion start; sleep 5; salt-key -a '*' -y; salt '*' state.hightstate
 
 RUN service salt-master start; service salt-minion start; sleep 1; salt '*' state.highstate
 

@@ -2,11 +2,13 @@
 
 MPD:
     pkg.installed:
-        - name: mpd
-        - name: mpc
+        - names: 
+            - mpd
+            - mpc
         
 
 sound-system:
     pkg.installed:
-        - name: alsa-utils
+        - names: 
+            - alsa-utils
         

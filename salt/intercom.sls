@@ -9,8 +9,9 @@ User:
 
 Packages:
     pkg.installed:
-        - name: git
-        - name: python3-zmq
+        - names:
+            - git
+            - python3-zmq
 
 Intercom.git:
     
@@ -20,12 +21,12 @@ Intercom.git:
         - force_checkout: true
         - runas: intercom
         - require:
-            - user: intercom
+            - user: User
     
     cmd.run:
         - name: git reset --hard
         - cwd: /home/intercom/Intercom
         - runas: intercom
         - require:
-            - user: intercom
-            - pkg: git
+            - user: User
+            - pkg: Packages

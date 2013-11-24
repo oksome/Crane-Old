@@ -9,7 +9,7 @@ multimedia:
         - name: vlc
 
 power-user:
-    pkg.instllad:
+    pkg.instlled:
         xdotool
         
 power:

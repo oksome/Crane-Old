@@ -8,9 +8,10 @@ base:
         - desktop
         - intercom
         
-    'roles:controller':
+    'roles:intercom-relay':
         - match: grain
         - intercom
+        - intercom-relay
     
     'roles:jukebox':
         - match: grain

@@ -2,6 +2,6 @@ master: localhost
 
 grains:
     roles:
-        - intercom
+        - intercom-relay
         - jukebox
 

@@ -1,11 +1,10 @@
 # TODO: Enable different .sls files depending on the systems (grains ?)
 
 base:
-    '*':
-        - basics
 
     'roles:desktop':
         - match: grain
+        - basics
         - desktop
         - intercom
         
@@ -15,5 +14,6 @@ base:
     
     'roles:jukebox':
         - match: grain
+        - basics
         - jukebox
         - intercom

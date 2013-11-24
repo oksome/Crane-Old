@@ -1,6 +1,9 @@
 # TODO: Enable different .sls files depending on the systems (grains ?)
 
 base:
+    '*':
+        - basics
+
     'roles:desktop':
         - match: grain
         - desktop

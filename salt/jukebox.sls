@@ -3,6 +3,7 @@
 MPD:
     pkg.installed:
         - name: mpd
+        - name: mpc
         
 
 sound-system:

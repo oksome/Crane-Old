@@ -3,6 +3,7 @@ Tools:
         - names:
             - curl
             - wget
+            - screen
 
 Developer:
     pkg.installed:

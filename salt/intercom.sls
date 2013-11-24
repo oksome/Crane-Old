@@ -21,7 +21,7 @@ Intercom.git:
         - force_checkout: true
         - runas: intercom
         - require:
-            - user: intercom
+            - user: User
     
     cmd.run:
         - name: git reset --hard

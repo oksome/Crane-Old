@@ -1,22 +1,27 @@
 desktop:
     pkg.installed:
-        - name: i3
-        - name: lightdm
+        - names:
+            - i3
+            - lightdm
 
 multimedia:
     pkg.installed:
-        - name: alsa-utils
-        - name: vlc
+        - names:
+            - alsa-utils
+            - vlc
 
 power-user:
     pkg.instlled:
-        xdotool
+        - names:
+            - xdotool
         
 power:
     pkg.installed:
-        - pm-utils
+        - names:
+            - pm-utils
 
 arduino-ready:
     pkg.installed:
-        openjdk-7-jdk
+        - names:
+            - openjdk-7-jdk
 

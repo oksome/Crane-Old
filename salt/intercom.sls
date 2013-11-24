@@ -1,10 +1,16 @@
 # Intercom system for Home automation
 
-intercom:
-  user.present:
-    - fullname: Intercom
-    - shell: /bin/bash
-    - home: /home/intercom
+User:
+    user.present:
+        - name: intercom
+        - fullname: Intercom
+        - shell: /bin/bash
+        - home: /home/intercom
+
+Packages:
+    pkg.installed:
+        - name: git
+        - name: python3-zmq
 
 Intercom.git:
     
@@ -22,3 +28,4 @@ Intercom.git:
         - runas: intercom
         - require:
             - user: intercom
+            - pkg: git

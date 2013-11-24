@@ -28,5 +28,5 @@ Intercom.git:
         - cwd: /home/intercom/Intercom
         - runas: intercom
         - require:
-            - user: intercom
-            - pkg: git
+            - user: User
+            - pkg: Packages

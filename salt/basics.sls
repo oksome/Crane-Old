@@ -13,3 +13,4 @@ Developer:
             - debootstrap
             - mercurial
             - git
+            - arp-scan
